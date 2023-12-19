@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+<section class="vh-100" style="background-color: #b68d96;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card" style="border-radius: 1rem;">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-5 d-none d-md-block">
+                            <img src="{% static 'myshop.png' %}" style="height: 100%; border-radius: 2%;"
+                                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                        </div>
+                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+
+                                <div class="d-flex align-items-center mb-3 pb-1">
+                                    <span class="h2 fw-bold mb-0">Welcome to our website! You have been registered successfully <i class="fas fa-check-circle ms-2 text-success fa-2x"></i></span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .card {
+        height: 72%;
+    }
+    .fa-check-circle {
+        font-size: 1em;
+        position: relative;
+        top: 2px;
+    }
+</style>
+{% endblock %}
