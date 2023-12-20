@@ -4,6 +4,7 @@ from django.views.generic import ListView, CreateView
 from .models import Review
 from .forms import ReviewForm
 
+
 def home(request):
     return render(request, 'home.html', {})
 
@@ -19,4 +20,3 @@ class Reviews(CreateView):
 class ReviewList(ListView):
     model=Review
     template_name='Reviews.html'
-

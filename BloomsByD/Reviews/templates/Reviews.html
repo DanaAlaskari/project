@@ -13,9 +13,9 @@
                     {% for Review in object_list %}
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow {% if forloop.counter|divisibleby:2 %}border-primary{% else %}border-secondary{% endif %}">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-start">
+                            <div class="card-body d-flex flex-column justify-content-center">
                                 <p class="card-text flower-name text-center">{{ Review.flower }}</p>
-                                <div class="ml-auto">
+                                <div class="">
                                     <p class="card-text"><b>User:</b> {{ Review.username }}</p>
                                     <p class="card-text"><b>Feedback:</b> {{ Review.opinion }}</p>
                                 </div>
